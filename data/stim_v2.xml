@@ -1,0 +1,1364 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+  <workspace id="1">
+    <item id="1">
+      <type>block</type>
+      <dimensions>
+        <x>189</x>
+        <y>63</y> </dimensions>
+      <hsv>277, 96, 55</hsv>
+
+      <color>purple</color>
+      <size>big</size>
+      <length>long</length>
+
+      <location>
+        <x>411</x>
+        <y>94</y> </location> </item>
+
+    <item id="2">
+      <type>block</type>
+      <dimensions>
+        <x>117</x>
+        <y>118</y> </dimensions>
+      <hsv>204, 90, 71</hsv>
+
+      <color>blue</color>
+      <size>big</size>
+      <length>short</length>
+
+      <location>
+        <x>460</x>
+        <y>233</y> </location> </item>
+
+    <item id="3">
+      <type>block</type>
+      <dimensions>
+        <x>57</x>
+        <y>60</y> </dimensions>
+      <hsv>204, 90, 63</hsv>
+
+      <color>blue</color>
+      <size>small</size>
+      <length>short</length>
+
+      <location>
+        <x>74</x>
+        <y>349</y> </location> </item>
+
+    <item id="KEY">
+      <type>block</type>
+      <dimensions>
+        <x>90</x>
+        <y>87</y> </dimensions>
+      <hsv>277, 96, 67</hsv>
+
+      <color>purple</color>
+      <size>small</size>
+      <length>short</length>
+
+      <location>
+        <x>133</x>
+        <y>455</y> </location> </item>
+
+    <item id="4">
+      <type>block</type>
+      <dimensions>
+        <x>57</x>
+        <y>186</y> </dimensions>
+      <hsv>278, 96, 68</hsv>
+
+      <color>purple</color>
+      <size>big</size>
+      <length>long</length>
+
+      <location>
+        <x>230</x>
+        <y>417</y> </location> </item>
+  </workspace>
+
+  <workspace id="2">
+    <item id="1">
+      <type>block</type>
+      <dimensions>
+        <x>63</x>
+        <y>59</y> </dimensions>
+      <hsv>204, 90, 63</hsv>
+
+      <color>blue</color>
+      <size>small</size>
+      <length>short</length>
+
+      <location>
+        <x>72</x>
+        <y>75</y> </location> </item>
+
+    <item id="KEY">
+      <type>block</type>
+      <dimensions>
+        <x>102</x>
+        <y>101</y> </dimensions>
+      <hsv>277, 95, 60</hsv>
+
+      <color>purple</color>
+      <size>big</size>
+      <length>short</length>
+
+      <location>
+        <x>125</x>
+        <y>177</y> </location> </item>
+
+    <item id="2">
+      <type>block</type>
+      <dimensions>
+        <x>63</x>
+        <y>195</y> </dimensions>
+      <hsv>277, 95, 60</hsv>
+
+      <color>purple</color>
+      <size>big</size>
+      <length>long</length>
+
+      <location>
+        <x>227</x>
+        <y>139</y> </location> </item>
+
+    <item id="3">
+      <type>scissors</type>
+      <dimensions>
+        <x>199</x>
+        <y>84</y> </dimensions>
+      <hsv>180, 76, 61</hsv>
+
+      <color>blue</color>
+      <size>big</size>
+      <length>long</length>
+
+      <location>
+        <x>400</x>
+        <y>104</y> </location> </item>
+
+    <item id="4">
+      <type>block</type>
+      <dimensions>
+        <x>62</x>
+        <y>64</y> </dimensions>
+      <hsv>204, 85, 91</hsv>
+
+      <color>blue</color>
+      <size>small</size>
+      <length>short</length>
+
+      <location>
+        <x>319</x>
+        <y>207</y> </location> </item>
+
+    <item id="5">
+      <type>mug</type>
+      <dimensions>
+        <x>90</x>
+        <y>77</y> </dimensions>
+      <hsv>63, 52, 61</hsv>
+
+      <color>green</color>
+      <size>small</size>
+      <length>short</length>
+
+      <location>
+        <x>451</x>
+        <y>202</y> </location> </item>
+
+    <item id="6">
+      <type>block</type>
+      <dimensions>
+        <x>195</x>
+        <y>55</y> </dimensions>
+      <hsv>277, 96, 51</hsv>
+
+      <color>purple</color>
+      <size>big</size>
+      <length>long</length>
+
+      <location>
+        <x>394</x>
+        <y>314</y> </location> </item>
+
+    <item id="7">
+      <type>screwdriver</type>
+      <dimensions>
+        <x>222</x>
+        <y>35</y> </dimensions>
+      <hsv>300, 88, 41</hsv>
+
+      <color>purple</color>
+      <size>big</size>
+      <length>long</length>
+
+      <location>
+        <x>132</x>
+        <y>360</y> </location> </item>
+
+    <item id="8">
+      <type>screwdriver</type>
+      <dimensions>
+        <x>139</x>
+        <y>24</y> </dimensions>
+      <hsv>300, 88, 41</hsv>
+
+      <color>purple</color>
+      <size>small</size>
+      <length>short</length>
+
+      <location>
+        <x>228</x>
+        <y>397</y> </location> </item>
+
+    <item id="9">
+      <type>screwdriver</type>
+      <dimensions>
+        <x>208</x>
+        <y>27</y> </dimensions>
+      <hsv>0, 79, 83</hsv>
+
+      <color>red</color>
+      <size>big</size>
+      <length>long</length>
+
+      <location>
+        <x>260</x>
+        <y>448</y> </location> </item>
+
+    <item id="10">
+      <type>mug</type>
+      <dimensions>
+        <x>116</x>
+        <y>108</y> </dimensions>
+      <hsv>230, 30, 16</hsv>
+
+      <color>black</color>
+      <size>big</size>
+      <length>long</length>
+
+      <location>
+        <x>80</x>
+        <y>451</y> </location> </item>
+
+    <item id="11">
+      <type>block</type>
+      <dimensions>
+        <x>117</x>
+        <y>109</y> </dimensions>
+      <hsv>204, 90, 72</hsv>
+
+      <color>blue</color>
+      <size>big</size>
+      <length>short</length>
+
+      <location>
+        <x>463</x>
+        <y>466</y> </location> </item>
+
+    <item id="12">
+      <type>block</type>
+      <dimensions>
+        <x>80</x>
+        <y>80</y> </dimensions>
+      <hsv>100, 66, 55</hsv>
+
+      <location>
+        <x>60</x>
+        <y>300</y> </location> </item>
+
+    <item id="13">
+      <type>scissors</type>
+      <dimensions>
+        <x>152</x>
+        <y>56</y> </dimensions>
+      <hsv>237, 99, 64</hsv>
+      <location>
+        <x>324</x>
+        <y>50</y> </location> </item>
+
+    <item id="14">
+      <type>mug</type>
+      <dimensions>
+        <x>53</x>
+        <y>48</y> </dimensions>
+      <hsv>2, 99, 71</hsv>
+      <location>
+        <x>253</x>
+        <y>280</y> </location> </item>
+
+    <item id="15">
+      <type>scissors</type>
+      <dimensions>
+        <x>122</x>
+        <y>46</y> </dimensions>
+      <hsv>237, 99, 64</hsv>
+      <location>
+        <x>300</x>
+        <y>500</y> </location> </item>
+  </workspace>
+  <workspace id="3">
+    <item id="KEY">
+      <type>block</type>
+      <dimensions>
+        <x>206</x>
+        <y>57</y> </dimensions>
+      <hsv>277, 95, 60</hsv>
+      <location>
+        <x>110</x>
+        <y>355</y> </location> </item>
+
+    <item id="colortypecomp">
+      <type>block</type>
+      <dimensions>
+        <x>77</x>
+        <y>77</y> </dimensions>
+      <hsv>277, 95, 60</hsv>
+      <location>
+        <x>460</x>
+        <y>210</y> </location> </item>
+
+    <item id="3">
+      <type>screwdriver</type>
+      <dimensions>
+        <x>181</x>
+        <y>30</y> </dimensions>
+      <hsv>0, 76, 87</hsv>
+      <location>
+        <x>275</x>
+        <y>211</y> </location> </item>
+
+    <item id="4">
+      <type>block</type>
+      <dimensions>
+        <x>85</x>
+        <y>82</y> </dimensions>
+      <hsv>117, 90, 51</hsv>
+      <location>
+        <x>103</x>
+        <y>464</y> </location> </item>
+
+    <item id="5">
+      <type>scissors</type>
+      <dimensions>
+        <x>157</x>
+        <y>62</y> </dimensions>
+      <hsv>237, 99, 64</hsv>
+      <location>
+        <x>438</x>
+        <y>93</y> </location> </item>
+
+    <item id="6">
+      <type>bottle</type>
+      <dimensions>
+        <x>61</x>
+        <y>165</y> </dimensions>
+      <hsv>66, 63, 85</hsv>
+      <location>
+        <x>456</x>
+        <y>426</y> </location> </item>
+
+    <item id="7">
+      <type>mug</type>
+      <dimensions>
+        <x>100</x>
+        <y>91</y> </dimensions>
+      <hsv>0, 0, 16</hsv>
+      <location>
+        <x>280</x>
+        <y>460</y> </location> </item>
+
+    <item id="8">
+      <type>scissors</type>
+      <dimensions>
+        <x>149</x>
+        <y>60</y> </dimensions>
+      <hsv>34, 98, 94</hsv>
+      <location>
+        <x>306</x>
+        <y>360</y> </location> </item>
+
+    <item id="9">
+      <type>screwdriver</type>
+      <dimensions>
+        <x>235</x>
+        <y>41</y> </dimensions>
+      <hsv>242, 100, 68</hsv>
+      <location>
+        <x>380</x>
+        <y>290</y> </location> </item>
+
+    <item id="10">
+      <type>bottle</type>
+      <dimensions>
+        <x>61</x>
+        <y>165</y> </dimensions>
+      <hsv>220, 80, 100</hsv>
+      <location>
+        <x>77</x>
+        <y>120</y> </location> </item>
+
+    <item id="11">
+      <type>mug</type>
+      <dimensions>
+        <x>94</x>
+        <y>86</y> </dimensions>
+      <hsv>329, 43, 82</hsv>
+      <location>
+        <x>183</x>
+        <y>125</y> </location> </item>
+
+    <item id="12">
+      <type>block</type>
+      <dimensions>
+        <x>68</x>
+        <y>67</y> </dimensions>
+      <hsv>0, 70, 58</hsv>
+      <location>
+        <x>300</x>
+        <y>140</y> </location> </item>
+  </workspace>
+
+  <workspace id="4">
+    <item id="KEY">
+      <type>block</type>
+      <dimensions>
+        <x>206</x>
+        <y>57</y> </dimensions>
+      <hsv>277, 95, 60</hsv>
+      <location>
+        <x>110</x>
+        <y>355</y> </location> </item>
+
+    <item id="noncomp">
+      <type>block</type>
+      <dimensions>
+        <x>90</x>
+        <y>90</y> </dimensions>
+      <hsv>100, 67, 52</hsv>
+      <location>
+        <x>460</x>
+        <y>210</y> </location> </item>
+
+    <item id="3">
+      <type>screwdriver</type>
+      <dimensions>
+        <x>181</x>
+        <y>30</y> </dimensions>
+      <hsv>0, 76, 87</hsv>
+      <location>
+        <x>275</x>
+        <y>211</y> </location> </item>
+
+    <item id="4">
+      <type>block</type>
+      <dimensions>
+        <x>85</x>
+        <y>82</y> </dimensions>
+      <hsv>117, 90, 51</hsv>
+      <location>
+        <x>103</x>
+        <y>464</y> </location> </item>
+
+    <item id="5">
+      <type>scissors</type>
+      <dimensions>
+        <x>157</x>
+        <y>62</y> </dimensions>
+      <hsv>237, 99, 64</hsv>
+      <location>
+        <x>438</x>
+        <y>93</y> </location> </item>
+
+    <item id="6">
+      <type>bottle</type>
+      <dimensions>
+        <x>61</x>
+        <y>165</y> </dimensions>
+      <hsv>66, 63, 85</hsv>
+      <location>
+        <x>456</x>
+        <y>426</y> </location> </item>
+
+    <item id="7">
+      <type>mug</type>
+      <dimensions>
+        <x>100</x>
+        <y>91</y> </dimensions>
+      <hsv>0, 0, 16</hsv>
+      <location>
+        <x>280</x>
+        <y>460</y> </location> </item>
+
+    <item id="8">
+      <type>scissors</type>
+      <dimensions>
+        <x>149</x>
+        <y>60</y> </dimensions>
+      <hsv>34, 98, 94</hsv>
+      <location>
+        <x>306</x>
+        <y>360</y> </location> </item>
+
+    <item id="9">
+      <type>screwdriver</type>
+      <dimensions>
+        <x>235</x>
+        <y>41</y> </dimensions>
+      <hsv>242, 100, 68</hsv>
+      <location>
+        <x>380</x>
+        <y>290</y> </location> </item>
+
+    <item id="10">
+      <type>bottle</type>
+      <dimensions>
+        <x>61</x>
+        <y>165</y> </dimensions>
+      <hsv>220, 80, 100</hsv>
+      <location>
+        <x>77</x>
+        <y>120</y> </location> </item>
+
+    <item id="11">
+      <type>mug</type>
+      <dimensions>
+        <x>94</x>
+        <y>86</y> </dimensions>
+      <hsv>329, 43, 82</hsv>
+      <location>
+        <x>183</x>
+        <y>125</y> </location> </item>
+
+    <item id="12">
+      <type>block</type>
+      <dimensions>
+        <x>68</x>
+        <y>67</y> </dimensions>
+      <hsv>0, 70, 58</hsv>
+      <location>
+        <x>300</x>
+        <y>140</y> </location> </item>
+  </workspace>
+
+  <workspace id="5">
+    <item id="1">
+      <type>block</type>
+      <dimensions>
+        <x>206</x>
+        <y>57</y> </dimensions>
+      <hsv>277, 95, 60</hsv>
+      <location>
+        <x>110</x>
+        <y>355</y> </location> </item>
+
+    <item id="2">
+      <type>block</type>
+      <dimensions>
+        <x>90</x>
+        <y>90</y> </dimensions>
+      <hsv>100, 67, 52</hsv>
+      <location>
+        <x>460</x>
+        <y>210</y> </location> </item>
+
+    <item id="3">
+      <type>screwdriver</type>
+      <dimensions>
+        <x>181</x>
+        <y>30</y> </dimensions>
+      <hsv>0, 76, 87</hsv>
+      <location>
+        <x>275</x>
+        <y>211</y> </location> </item>
+
+    <item id="4">
+      <type>block</type>
+      <dimensions>
+        <x>52</x>
+        <y>52</y> </dimensions>
+      <hsv>117, 90, 51</hsv>
+      <location>
+        <x>113</x>
+        <y>464</y> </location> </item>
+
+    <item id="5">
+      <type>scissors</type>
+      <dimensions>
+        <x>157</x>
+        <y>62</y> </dimensions>
+      <hsv>237, 99, 64</hsv>
+      <location>
+        <x>438</x>
+        <y>93</y> </location> </item>
+
+    <item id="6">
+      <type>bottle</type>
+      <dimensions>
+        <x>61</x>
+        <y>165</y> </dimensions>
+      <hsv>66, 63, 85</hsv>
+      <location>
+        <x>456</x>
+        <y>426</y> </location> </item>
+
+    <item id="7">
+      <type>mug</type>
+      <dimensions>
+        <x>100</x>
+        <y>91</y> </dimensions>
+      <hsv>0, 0, 16</hsv>
+      <location>
+        <x>280</x>
+        <y>460</y> </location> </item>
+
+    <item id="8">
+      <type>scissors</type>
+      <dimensions>
+        <x>149</x>
+        <y>60</y> </dimensions>
+      <hsv>34, 98, 94</hsv>
+      <location>
+        <x>306</x>
+        <y>360</y> </location> </item>
+
+    <item id="9">
+      <type>screwdriver</type>
+      <dimensions>
+        <x>235</x>
+        <y>41</y> </dimensions>
+      <hsv>242, 100, 68</hsv>
+      <location>
+        <x>380</x>
+        <y>290</y> </location> </item>
+
+    <item id="10">
+      <type>bottle</type>
+      <dimensions>
+        <x>61</x>
+        <y>165</y> </dimensions>
+      <hsv>220, 80, 100</hsv>
+      <location>
+        <x>77</x>
+        <y>120</y> </location> </item>
+
+    <item id="KEY">
+      <type>mug</type>
+      <dimensions>
+        <x>64</x>
+        <y>56</y> </dimensions>
+      <hsv>329, 43, 82</hsv>
+      <location>
+        <x>183</x>
+        <y>125</y> </location> </item>
+
+    <item id="12">
+      <type>block</type>
+      <dimensions>
+        <x>68</x>
+        <y>67</y> </dimensions>
+      <hsv>0, 70, 58</hsv>
+      <location>
+        <x>300</x>
+        <y>140</y> </location> </item>
+
+    <item id="13">
+      <!-- small pink block -->
+      <type>block</type>
+      <dimensions>
+        <x>53</x>
+        <y>53</y> </dimensions>
+      <hsv>330, 56, 85</hsv>
+      <location>
+        <x>170</x>
+        <y>500</y> </location> </item>
+
+    <item id="14">
+      <type>pen</type>
+      <dimensions>
+        <x>173</x>
+        <y>29</y> </dimensions>
+      <hsv>360, 85, 85</hsv>
+      <location>
+        <x>144</x>
+        <y>290</y> </location> </item>
+
+    <item id="15">
+      <type>scissors</type>
+      <dimensions>
+        <x>38</x>
+        <y>102</y> </dimensions>
+      <hsv>237, 99, 60</hsv>
+      <location>
+        <x>384</x>
+        <y>434</y> </location> </item>
+
+      <item id="16">
+        <type>block</type>
+        <dimensions>
+          <x>70</x>
+          <y>70</y> </dimensions>
+        <hsv>238, 99, 60</hsv>
+        <location>
+          <x>270</x>
+          <y>51</y> </location> </item>
+  </workspace>
+
+  <workspace id="6">
+    <item id="1">
+      <type>block</type>
+      <dimensions>
+        <x>206</x>
+        <y>57</y> </dimensions>
+      <hsv>277, 95, 60</hsv>
+      <location>
+        <x>110</x>
+        <y>355</y> </location> </item>
+
+    <item id="2">
+      <type>block</type>
+      <dimensions>
+        <x>90</x>
+        <y>90</y> </dimensions>
+      <hsv>100, 67, 52</hsv>
+      <location>
+        <x>460</x>
+        <y>210</y> </location> </item>
+
+    <item id="3">
+      <type>screwdriver</type>
+      <dimensions>
+        <x>181</x>
+        <y>30</y> </dimensions>
+      <hsv>0, 76, 87</hsv>
+      <location>
+        <x>275</x>
+        <y>211</y> </location> </item>
+
+    <item id="KEY">
+      <type>block</type>
+      <dimensions>
+        <x>52</x>
+        <y>52</y> </dimensions>
+      <hsv>117, 90, 51</hsv>
+      <location>
+        <x>113</x>
+        <y>464</y> </location> </item>
+
+    <item id="5">
+      <type>scissors</type>
+      <dimensions>
+        <x>157</x>
+        <y>62</y> </dimensions>
+      <hsv>237, 99, 64</hsv>
+      <location>
+        <x>438</x>
+        <y>93</y> </location> </item>
+
+    <item id="6">
+      <type>bottle</type>
+      <dimensions>
+        <x>61</x>
+        <y>165</y> </dimensions>
+      <hsv>66, 63, 85</hsv>
+      <location>
+        <x>456</x>
+        <y>426</y> </location> </item>
+
+    <item id="7">
+      <type>mug</type>
+      <dimensions>
+        <x>100</x>
+        <y>91</y> </dimensions>
+      <hsv>0, 0, 16</hsv>
+      <location>
+        <x>280</x>
+        <y>460</y> </location> </item>
+
+    <item id="8">
+      <type>scissors</type>
+      <dimensions>
+        <x>149</x>
+        <y>60</y> </dimensions>
+      <hsv>34, 98, 94</hsv>
+      <location>
+        <x>306</x>
+        <y>360</y> </location> </item>
+
+    <item id="9">
+      <type>screwdriver</type>
+      <dimensions>
+        <x>235</x>
+        <y>41</y> </dimensions>
+      <hsv>242, 100, 68</hsv>
+      <location>
+        <x>380</x>
+        <y>290</y> </location> </item>
+
+    <item id="10">
+      <type>bottle</type>
+      <dimensions>
+        <x>61</x>
+        <y>165</y> </dimensions>
+      <hsv>220, 80, 100</hsv>
+      <location>
+        <x>77</x>
+        <y>120</y> </location> </item>
+
+    <item id="11">
+      <type>mug</type>
+      <dimensions>
+        <x>64</x>
+        <y>56</y> </dimensions>
+      <hsv>329, 43, 82</hsv>
+      <location>
+        <x>183</x>
+        <y>125</y> </location> </item>
+
+    <item id="12">
+      <!-- was red block -->
+      <type>block</type>
+      <dimensions>
+        <x>68</x>
+        <y>67</y> </dimensions>
+      <hsv>125, 67, 82</hsv>
+      <location>
+        <x>300</x>
+        <y>140</y> </location> </item>
+
+    <item id="13">
+      <!-- small pink block -->
+      <type>block</type>
+      <dimensions>
+        <x>53</x>
+        <y>53</y> </dimensions>
+      <hsv>330, 56, 85</hsv>
+      <location>
+        <x>170</x>
+        <y>500</y> </location> </item>
+
+    <item id="14">
+      <type>pen</type>
+      <dimensions>
+        <x>173</x>
+        <y>29</y> </dimensions>
+      <hsv>109, 66, 42</hsv>
+      <location>
+        <x>144</x>
+        <y>290</y> </location> </item>
+
+    <item id="15">
+      <!-- small scissors -->
+      <type>scissors</type>
+      <dimensions>
+        <x>38</x>
+        <y>102</y> </dimensions>
+      <hsv>114, 77, 50</hsv>
+      <location>
+        <x>384</x>
+        <y>434</y> </location> </item>
+
+      <item id="16">
+        <type>block</type>
+        <dimensions>
+          <x>70</x>
+          <y>70</y> </dimensions>
+        <hsv>238, 99, 60</hsv>
+        <location>
+          <x>270</x>
+          <y>51</y> </location> </item>
+  </workspace>
+
+  <workspace id="7">
+    <item id="1">
+      <type>block</type>
+      <dimensions>
+        <x>206</x>
+        <y>57</y> </dimensions>
+      <hsv>277, 95, 60</hsv>
+      <location>
+        <x>110</x>
+        <y>355</y> </location> </item>
+
+    <item id="2">
+      <type>block</type>
+      <dimensions>
+        <x>90</x>
+        <y>90</y> </dimensions>
+      <hsv>100, 67, 52</hsv>
+      <location>
+        <x>460</x>
+        <y>210</y> </location> </item>
+
+    <item id="3">
+      <type>screwdriver</type>
+      <dimensions>
+        <x>181</x>
+        <y>30</y> </dimensions>
+      <hsv>0, 76, 87</hsv>
+      <location>
+        <x>275</x>
+        <y>211</y> </location> </item>
+
+    <item id="KEY">
+      <type>block</type>
+      <dimensions>
+        <x>52</x>
+        <y>52</y> </dimensions>
+      <hsv>117, 90, 51</hsv>
+      <location>
+        <x>113</x>
+        <y>464</y> </location> </item>
+
+    <item id="5">
+      <type>scissors</type>
+      <dimensions>
+        <x>157</x>
+        <y>62</y> </dimensions>
+      <hsv>237, 99, 64</hsv>
+      <location>
+        <x>438</x>
+        <y>93</y> </location> </item>
+
+    <item id="6">
+      <type>bottle</type>
+      <dimensions>
+        <x>61</x>
+        <y>165</y> </dimensions>
+      <hsv>66, 63, 85</hsv>
+      <location>
+        <x>456</x>
+        <y>426</y> </location> </item>
+
+    <item id="7">
+      <type>mug</type>
+      <dimensions>
+        <x>100</x>
+        <y>91</y> </dimensions>
+      <hsv>0, 0, 16</hsv>
+      <location>
+        <x>280</x>
+        <y>460</y> </location> </item>
+
+    <item id="8">
+      <type>scissors</type>
+      <dimensions>
+        <x>149</x>
+        <y>60</y> </dimensions>
+      <hsv>34, 98, 94</hsv>
+      <location>
+        <x>306</x>
+        <y>360</y> </location> </item>
+
+    <item id="9">
+      <type>screwdriver</type>
+      <dimensions>
+        <x>235</x>
+        <y>41</y> </dimensions>
+      <hsv>242, 100, 68</hsv>
+      <location>
+        <x>380</x>
+        <y>290</y> </location> </item>
+
+    <item id="10">
+      <type>bottle</type>
+      <dimensions>
+        <x>61</x>
+        <y>165</y> </dimensions>
+      <hsv>220, 80, 100</hsv>
+      <location>
+        <x>77</x>
+        <y>120</y> </location> </item>
+
+    <item id="11">
+      <type>mug</type>
+      <dimensions>
+        <x>85</x>
+        <y>56</y> </dimensions>
+      <hsv>124, 76, 50</hsv>
+      <location>
+        <x>183</x>
+        <y>125</y> </location> </item>
+
+    <item id="12">
+      <!-- was red block -->
+      <type>block</type>
+      <dimensions>
+        <x>68</x>
+        <y>67</y> </dimensions>
+      <hsv>125, 67, 82</hsv>
+      <location>
+        <x>300</x>
+        <y>140</y> </location> </item>
+
+    <item id="13">
+      <!-- small pink block -->
+      <type>block</type>
+      <dimensions>
+        <x>53</x>
+        <y>53</y> </dimensions>
+      <hsv>330, 56, 85</hsv>
+      <location>
+        <x>170</x>
+        <y>500</y> </location> </item>
+
+    <item id="14">
+      <type>pen</type>
+      <dimensions>
+        <x>173</x>
+        <y>29</y> </dimensions>
+      <hsv>109, 66, 42</hsv>
+      <location>
+        <x>144</x>
+        <y>290</y> </location> </item>
+
+    <item id="15">
+      <!-- formerly small green scissors -->
+      <type>scissors</type>
+      <dimensions>
+        <x>52</x>
+        <y>135</y> </dimensions>
+      <hsv>114, 77, 50</hsv>
+      <location>
+        <x>384</x>
+        <y>434</y> </location> </item>
+
+      <item id="16">
+        <type>block</type>
+        <dimensions>
+          <x>70</x>
+          <y>70</y> </dimensions>
+        <hsv>238, 99, 60</hsv>
+        <location>
+          <x>270</x>
+          <y>51</y> </location> </item>
+  </workspace>
+
+  <workspace id="8">
+    <item id="KEY">
+      <type>block</type>
+      <dimensions>
+        <x>206</x>
+        <y>57</y> </dimensions>
+      <hsv>277, 95, 60</hsv>
+      <location>
+        <x>110</x>
+        <y>355</y> </location> </item>
+
+    <item id="2">
+      <type>block</type>
+      <dimensions>
+        <x>90</x>
+        <y>90</y> </dimensions>
+      <hsv>100, 67, 52</hsv>
+      <location>
+        <x>460</x>
+        <y>210</y> </location> </item>
+
+    <item id="3">
+      <type>screwdriver</type>
+      <dimensions>
+        <x>181</x>
+        <y>30</y> </dimensions>
+      <hsv>0, 76, 87</hsv>
+      <location>
+        <x>275</x>
+        <y>211</y> </location> </item>
+
+    <item id="4">
+      <type>block</type>
+      <dimensions>
+        <x>52</x>
+        <y>52</y> </dimensions>
+      <hsv>117, 90, 51</hsv>
+      <location>
+        <x>113</x>
+        <y>464</y> </location> </item>
+
+    <item id="5">
+      <type>scissors</type>
+      <dimensions>
+        <x>157</x>
+        <y>62</y> </dimensions>
+      <hsv>237, 99, 64</hsv>
+      <location>
+        <x>438</x>
+        <y>93</y> </location> </item>
+
+    <item id="6">
+      <type>bottle</type>
+      <dimensions>
+        <x>61</x>
+        <y>165</y> </dimensions>
+      <hsv>66, 63, 85</hsv>
+      <location>
+        <x>456</x>
+        <y>426</y> </location> </item>
+
+    <item id="7">
+      <type>mug</type>
+      <dimensions>
+        <x>100</x>
+        <y>91</y> </dimensions>
+      <hsv>264, 57, 51</hsv>
+      <location>
+        <x>280</x>
+        <y>460</y> </location> </item>
+
+    <item id="8">
+      <type>scissors</type>
+      <dimensions>
+        <x>149</x>
+        <y>60</y> </dimensions>
+      <hsv>34, 98, 94</hsv>
+      <location>
+        <x>306</x>
+        <y>360</y> </location> </item>
+
+    <item id="9">
+      <type>screwdriver</type>
+      <dimensions>
+        <x>328</x>
+        <y>38</y> </dimensions>
+      <hsv>242, 100, 68</hsv>
+      <location>
+        <x>380</x>
+        <y>290</y> </location> </item>
+
+    <item id="10">
+      <type>bottle</type>
+      <dimensions>
+        <x>61</x>
+        <y>165</y> </dimensions>
+      <hsv>266, 67, 66</hsv>
+      <location>
+        <x>77</x>
+        <y>120</y> </location> </item>
+
+    <item id="11">
+      <type>mug</type>
+      <dimensions>
+        <x>64</x>
+        <y>56</y> </dimensions>
+      <hsv>329, 43, 82</hsv>
+      <location>
+        <x>183</x>
+        <y>125</y> </location> </item>
+
+    <item id="12">
+      <type>block</type>
+      <dimensions>
+        <x>68</x>
+        <y>67</y> </dimensions>
+      <hsv>267, 63, 51</hsv>
+      <location>
+        <x>300</x>
+        <y>140</y> </location> </item>
+
+    <item id="13">
+      <!-- small pink block -->
+      <type>block</type>
+      <dimensions>
+        <x>53</x>
+        <y>53</y> </dimensions>
+      <hsv>330, 56, 85</hsv>
+      <location>
+        <x>170</x>
+        <y>500</y> </location> </item>
+
+    <item id="14">
+      <type>pen</type>
+      <dimensions>
+        <x>173</x>
+        <y>29</y> </dimensions>
+      <hsv>360, 85, 85</hsv>
+      <location>
+        <x>144</x>
+        <y>290</y> </location> </item>
+
+    <item id="15">
+      <type>scissors</type>
+      <dimensions>
+        <x>38</x>
+        <y>102</y> </dimensions>
+      <hsv>237, 99, 60</hsv>
+      <location>
+        <x>384</x>
+        <y>434</y> </location> </item>
+
+    <item id="16">
+      <type>block</type>
+      <dimensions>
+        <x>70</x>
+        <y>70</y> </dimensions>
+      <hsv>266, 63, 51</hsv>
+      <location>
+        <x>270</x>
+        <y>51</y> </location> </item>
+  </workspace>
+
+  <workspace id="9">
+    <item id="KEy">
+      <type>block</type>
+      <dimensions>
+        <x>206</x>
+        <y>57</y> </dimensions>
+      <hsv>277, 95, 60</hsv>
+      <location>
+        <x>110</x>
+        <y>355</y> </location> </item>
+
+    <item id="2">
+      <type>block</type>
+      <dimensions>
+        <x>90</x>
+        <y>90</y> </dimensions>
+      <hsv>100, 67, 52</hsv>
+      <location>
+        <x>460</x>
+        <y>210</y> </location> </item>
+
+    <item id="3">
+      <type>screwdriver</type>
+      <dimensions>
+        <x>181</x>
+        <y>30</y> </dimensions>
+      <hsv>0, 76, 87</hsv>
+      <location>
+        <x>275</x>
+        <y>211</y> </location> </item>
+
+    <item id="4">
+      <type>block</type>
+      <dimensions>
+        <x>52</x>
+        <y>52</y> </dimensions>
+      <hsv>117, 90, 51</hsv>
+      <location>
+        <x>113</x>
+        <y>464</y> </location> </item>
+
+    <item id="5">
+      <type>scissors</type>
+      <dimensions>
+        <x>245</x>
+        <y>55</y> </dimensions>
+      <hsv>237, 99, 64</hsv>
+      <location>
+        <x>438</x>
+        <y>93</y> </location> </item>
+
+    <item id="6">
+      <type>bottle</type>
+      <dimensions>
+        <x>61</x>
+        <y>165</y> </dimensions>
+      <hsv>264, 74, 100</hsv>
+      <location>
+        <x>456</x>
+        <y>426</y> </location> </item>
+
+    <item id="7">
+      <type>mug</type>
+      <dimensions>
+        <x>100</x>
+        <y>91</y> </dimensions>
+      <hsv>0, 0, 16</hsv>
+      <location>
+        <x>280</x>
+        <y>460</y> </location> </item>
+
+    <item id="8">
+      <type>scissors</type>
+      <dimensions>
+        <x>149</x>
+        <y>60</y> </dimensions>
+      <hsv>34, 98, 94</hsv>
+      <location>
+        <x>306</x>
+        <y>360</y> </location> </item>
+
+    <item id="9">
+      <type>screwdriver</type>
+      <dimensions>
+        <x>358</x>
+        <y>54</y> </dimensions>
+      <hsv>242, 100, 68</hsv>
+      <location>
+        <x>380</x>
+        <y>290</y> </location> </item>
+
+    <item id="10">
+      <type>bottle</type>
+      <dimensions>
+        <x>61</x>
+        <y>165</y> </dimensions>
+      <hsv>220, 80, 100</hsv>
+      <location>
+        <x>77</x>
+        <y>120</y> </location> </item>
+
+    <item id="11">
+      <type>mug</type>
+      <dimensions>
+        <x>64</x>
+        <y>56</y> </dimensions>
+      <hsv>329, 43, 82</hsv>
+      <location>
+        <x>183</x>
+        <y>125</y> </location> </item>
+
+    <item id="12">
+      <type>block</type>
+      <dimensions>
+        <x>68</x>
+        <y>67</y> </dimensions>
+      <hsv>0, 70, 58</hsv>
+      <location>
+        <x>300</x>
+        <y>140</y> </location> </item>
+
+    <item id="13">
+      <!-- small pink block -->
+      <type>block</type>
+      <dimensions>
+        <x>53</x>
+        <y>53</y> </dimensions>
+      <hsv>330, 56, 85</hsv>
+      <location>
+        <x>170</x>
+        <y>500</y> </location> </item>
+
+    <item id="14">
+      <type>pen</type>
+      <dimensions>
+        <x>173</x>
+        <y>29</y> </dimensions>
+      <hsv>360, 85, 85</hsv>
+      <location>
+        <x>144</x>
+        <y>290</y> </location> </item>
+
+    <item id="15">
+      <type>scissors</type>
+      <dimensions>
+        <x>38</x>
+        <y>102</y> </dimensions>
+      <hsv>237, 99, 60</hsv>
+      <location>
+        <x>384</x>
+        <y>434</y> </location> </item>
+
+    <item id="16">
+      <type>block</type>
+      <dimensions>
+        <x>70</x>
+        <y>70</y> </dimensions>
+      <hsv>238, 99, 60</hsv>
+      <location>
+        <x>270</x>
+        <y>51</y> </location> </item>
+  </workspace>
+</data>

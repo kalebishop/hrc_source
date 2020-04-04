@@ -28,7 +28,7 @@ class SpeechModule:
             return self._label_color(obj)
         elif feature == "size":
             return self._label_size(obj, context)
-        elif feature == "dimensions":
+        elif feature == "dim":
             return self._label_dimensionality(obj, context)
         else:
             return "ERR: feature not found"

@@ -26,11 +26,11 @@ class CorpusTraining:
 
         responses = self.parse_responses_from_csv(csv_responses_filename)
         tokenized_responses = self.process_all_outputs(responses)
+        print("training.py:28: len(tokenized_responses) = ", len(tokenized_responses))
 
         feature_inputs = self.assemble_x(tokenized_responses)
         # TODO update to work with all responses (rather than one per qid)
         feature_outputs = self.assemble_Y(tokenized_responses)
-
         # raise NotImplementedError
 
         return feature_inputs, feature_outputs
@@ -90,7 +90,7 @@ class CorpusTraining:
 
                 obj_lst.append(o)
 
-            print(obj_lst)
+            # print(obj_lst)
             self.workspaces[id] = (key_item, Context(obj_lst))
 
     def assemble_x_for_q(self, obj, context, tokenized_response):
@@ -186,6 +186,7 @@ class CorpusTraining:
                     qs_to_indicies[field] = i
 
             row = next(csvreader)
+            row = next(csvreader)
             all_responses = [[] for x in qs_to_indicies.keys()]
 
             for row in csvreader:
@@ -196,6 +197,8 @@ class CorpusTraining:
                     # add response to appropriate list
                         all_responses[count].append(response)
                         count += 1
+
+        print(all_responses)
         return all_responses
 
     def assemble_Y(self, tokenized_responses):
@@ -256,10 +259,15 @@ class CorpusTraining:
 
 if __name__ == "__main__":
     trainer = CorpusTraining()
-    xml_file = "data/stim_v1.xml"
-    csv_file = "data/latest.csv"
+    xml_file = "data/stim_v1_original.xml"
+    csv_file = "data/study_v1_responses.csv"
+
+    xml2_file = "data/stim_v2.xml"
+    csv2_file = "data/study_v2_responses.csv"
 
     inputs, outputs = trainer.get_train_x_y(xml_file, csv_file)
+    trainer.workspaces = {}
+    inputs2, outputs2 = trainer.get_train_x_y(xml2_file, csv2_file)
     # #
     # responses = [["screwdriver", "blue screwdriver"], ["bottle", "red bottle"]]
     #
@@ -272,5 +280,19 @@ if __name__ == "__main__":
     clr_x, sz_x, dim_x = inputs
     clr_y, sz_y, dim_y = outputs
 
-    trainer.train(inputs, outputs)
+    clr_x2, sz_x2, dim_x2 = inputs2
+    clr_y2, sz_y2, dim_y2 = outputs2
+
+    clr_x += clr_x2
+    sz_x += sz_x2
+    dim_x += dim_x2
+
+    clr_y += clr_y2
+    sz_y += sz_y2
+    dim_y += dim_y2
+
+    i = (clr_x, sz_x, dim_x)
+    o = (clr_y, sz_y, dim_y)
+
+    trainer.train(i, o)
     trainer.save_models()

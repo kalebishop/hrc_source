@@ -40,9 +40,9 @@ class REG:
         w2c = "data/w2c_4096.txt"
         # w2c = "/ros/catkin_ws/src/hrc_discrim_learning/src/hrc_discrim_learning/data/w2c_4096.txt"
         self.sm = SpeechModule(w2c)
-        self.theta = 0.5
+        self.theta = 0.95
 
-        self.features = ["color", "size", "dimensions"]
+        self.features = ["color", "size", "dim"]
 
         self.models = {"color": SpeechLearner("color"),
                         "size": SpeechLearner("size"),
@@ -72,6 +72,7 @@ class REG:
             pscore_dict[(feature, label)] = pscore
 
         # TODO finish
+        import pdb; pdb.set_trace()
         best_candidate = max(pscore_dict.keys(), key=lambda x: pscore_dict[x])
         if pscore_dict[best_candidate] >= self.theta or context.env_size > 1:
             return best_candidate
@@ -90,11 +91,14 @@ class REG:
         while feature_set:
             feature, label = self._generate_single_output(object, context, feature_set)
             if not label:
-                output.append("type")
+                output += type
                 return output
-            output.append(label + " ")
+            # output.append(label + " ")
+            output += (label + " ")
+            feature_set.remove(feature)
 
-        return "ERR: check REGenerator"
+        # return "ERR: check REGenerator"
+        return output
 
     def get_model_input(self, feature, object, context):
         # context should include object

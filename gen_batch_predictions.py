@@ -14,4 +14,4 @@ def predict_batch(xml_workspace_filename):
         print(count, predicted)
 
 if __name__ == "__main__":
-    predict_batch("data/stim_v1.xml")
+    predict_batch("data/stim_v2.xml")

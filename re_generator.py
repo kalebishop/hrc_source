@@ -40,7 +40,7 @@ class REG:
         w2c = "data/w2c_4096.txt"
         # w2c = "/ros/catkin_ws/src/hrc_discrim_learning/src/hrc_discrim_learning/data/w2c_4096.txt"
         self.sm = SpeechModule(w2c)
-        self.theta = 0.95
+        self.theta = 0.5
 
         self.features = ["color", "size", "dim"]
 
@@ -62,7 +62,7 @@ class REG:
         model = self.models[feature]
         model.train(x, y)
 
-    def _generate_single_output(self, object, context, feature_set):
+    def _generate_single_output(self, object, context, type_env, feature_set):
         pscore_dict = {}
         for feature in feature_set:
             label, score, data, kept_objects = self.get_model_input(feature, object, context)
@@ -72,12 +72,12 @@ class REG:
             pscore_dict[(feature, label)] = pscore
 
         # TODO finish
-        import pdb; pdb.set_trace()
+        # import pdb; pdb.set_trace()
         best_candidate = max(pscore_dict.keys(), key=lambda x: pscore_dict[x])
-        if pscore_dict[best_candidate] >= self.theta or context.env_size > 1:
-            return best_candidate
+        if pscore_dict[best_candidate] >= self.theta or len(type_env) > 1:
+            return best_candidate[0], best_candidate[1], kept_objects
         else:
-            return None, None
+            return None, None, None
 
     def generate_output(self, object, context):
         # context should include object
@@ -85,16 +85,19 @@ class REG:
         output = ""
 
         type = object.get_feature_val("type")
+        type_env = context.get_type_match(type)
 
         # next: iterate through possible features
         feature_set = copy.copy(self.features)
         while feature_set:
-            feature, label = self._generate_single_output(object, context, feature_set)
+            feature, label, new_context = self._generate_single_output(object, context, type_env, feature_set)
             if not label:
                 output += type
                 return output
-            # output.append(label + " ")
+
             output += (label + " ")
+            context = Context(new_context)
+            type_env = context.get_type_match(type)
             feature_set.remove(feature)
 
         # return "ERR: check REGenerator"
@@ -103,19 +106,19 @@ class REG:
     def get_model_input(self, feature, object, context):
         # context should include object
         label, data = self.sm.label_feature(object, context, feature)
-        if feature == "color":
-            score, kept_objects = self.elim_objects_color(context, label)
+        if feature == "color" or feature == "type":
+            score, kept_objects = self.elim_objects_discrete(context, label, feature)
         else:
             score, kept_objects = self.elim_objects_gradable(context, feature, label, data)
 
         return label, score, data, kept_objects
 
-    def elim_objects_color(self, context, label):
+    def elim_objects_discrete(self, context, label, feature):
         # we want to eliminate everything that the term label can NOT apply to
         score = 0
         kept_objects = []
         for o in context.env:
-            this_label, data = self.sm.label_feature(o, context, "color")
+            this_label, data = self.sm.label_feature(o, context, feature)
             if label == this_label:
                 kept_objects.append(o)
             else:

@@ -24,7 +24,9 @@ class SpeechModule:
         return color_dict
 
     def label_feature(self, obj, context, feature):
-        if feature == "color":
+        if feature == 'type':
+            return 0, obj.get_feature_val('type')
+        elif feature == "color":
             return self._label_color(obj)
         elif feature == "size":
             return self._label_size(obj, context)

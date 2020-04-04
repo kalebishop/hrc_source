@@ -52,6 +52,13 @@ class Context:
             res.append(obj.get_feature_val(feature))
         return res
 
+    def get_type_match(self, type):
+        out_lst = []
+        for o in self.env:
+            if o.get_feature_val('type') == type:
+                out_lst.append(o)
+        return out_lst
+
     # def feature_match(self, feature, value):
     #     matches = {}
     #     count = 0

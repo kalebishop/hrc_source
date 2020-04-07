@@ -16,12 +16,13 @@ class Object:
                 "id" : msg.id,           # object id
                 "type": msg.type,        # object type (block, screwdriver, etc)
                 "rgb": (msg.color.r, msg.color.g, msg.color.b),      # object color as RGBA
-                "dimensions": (msg.x_dim, msg.y_dim, msg.z_dim), # object dimentions (estimated)
+                "dim": (msg.x_dim, msg.y_dim, msg.z_dim), # object dimentions (estimated)
                 # "pose": msg.pose.position # object pose (estimated) as Position msg (xyz)
             }
 
     def from_dict(self, dict):
         self.features = dict
+        print(self.features)
 
     def get_feature_val(self, feature):
         if feature == "color":
@@ -86,7 +87,7 @@ class Context:
         obj_ratios = {}
         for o in self.env:
             type = o.get_feature_val("type")
-            dims = [float(d) for d in o.get_feature_val("dimensions")]
+            dims = [float(d) for d in o.get_feature_val("dim")]
             sz = 1.0
             for d in dims:
                 sz *= d
@@ -122,7 +123,7 @@ class Context:
 
         for o in self.env:
             type = o.get_feature_val("type")
-            dims = [float(d) for d in o.get_feature_val("dimensions")]
+            dims = [float(d) for d in o.get_feature_val("dim")]
 
             sz = 1.0
             for d in dims:
@@ -140,11 +141,11 @@ class Context:
             o._set_feature_val("z_size", z_size)
             o._set_feature_val("z_dim", z_dim)
 
-        # grab size and dimensions
+        # grab size and dim
         # all_sizes = []
         # all_ratios = []
         # for o in self.env:
-        #     dims = [float(d) for d in o.get_feature_val("dimensions")]
+        #     dims = [float(d) for d in o.get_feature_val("dim")]
         #     sz = 1.0
         #     for d in dims:
         #         sz *= d

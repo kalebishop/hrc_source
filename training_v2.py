@@ -3,12 +3,13 @@ import csv
 from colorsys import hsv_to_rgb
 import statistics
 import copy
+import numpy
 
 from sklearn.utils.validation import check_is_fitted
 
 from base_classes import Object, Context
 from speech_module import SpeechModule
-from re_generator import REG
+from re_generator_v2 import REG
 
 class CorpusTraining:
     def __init__(self):
@@ -26,7 +27,7 @@ class CorpusTraining:
 
         responses = self.parse_responses_from_csv(csv_responses_filename)
         tokenized_responses = self.process_all_outputs(responses)
-        # print("training.py:28: len(tokenized_responses) = ", len(tokenized_responses))
+        print("training_v2.py:28: len(tokenized_responses) = ", len(tokenized_responses))
 
         feature_inputs = self.assemble_x(tokenized_responses)
         # TODO update to work with all responses (rather than one per qid)
@@ -36,19 +37,12 @@ class CorpusTraining:
         return feature_inputs, feature_outputs
 
     def train(self, feature_inputs, feature_outputs, save=True):
-        clr_x, sz_x, dim_x = feature_inputs
-        clr_y, sz_y, dim_y = feature_outputs
-
-        # truncate to appropriate sizes
-        clr_y = clr_y[:len(clr_x)]
-        sz_y = sz_y[:len(sz_x)]
-        dim_y = dim_y[:len(dim_x)]
-
-        self.reg.train_model("color", clr_x, clr_y)
-        self.reg.train_model("size", sz_x, sz_y)
-        self.reg.train_model("dim", dim_x, dim_y)
-
-        # self.reg.save_models()
+        i = numpy.array(feature_inputs)
+        o = numpy.array(feature_outputs[:len(feature_inputs)])
+        print(i.shape, o.shape)
+        self.reg.train_model(i, o)
+        if save:
+            self.reg.save_models()
 
     def parse_workspace_data_from_xml(self, filename):
         self.tree = et.parse(filename)
@@ -94,67 +88,50 @@ class CorpusTraining:
             self.workspaces[id] = (key_item, Context(obj_lst))
 
     def assemble_x_for_q(self, obj, context, tokenized_response):
+        """UPDATED"""
         labels, tokens = tokenized_response
         type = obj.get_feature_val("type")
 
         features = ["color", "size", "dim"]
 
-        color_x = []
-        size_x = []
-        dim_x = []
+        xq = []
 
         for t in tokens:
-            if "color" in features:
-                _, clr_score, clr_data, clr_kept_objects = self.reg.get_model_input("color", obj, context)
-                color_x.append([clr_score, clr_data])
-            if "size" in features:
-                _, sz_score, sz_data, sz_kept_objects = self.reg.get_model_input("size", obj, context)
-                size_x.append([sz_score, sz_data])
-            if "dim" in features:
-                _, dim_score, dim_data, dim_kept_objects = self.reg.get_model_input("dim", obj, context)
-                dim_x.append([dim_score, dim_data])
+            x, _, results = self.reg.get_model_input(obj, context)
+            xq.append(x)
 
             if t == self.sm.COLOR_I:
-                kept = clr_kept_objects
+                kept = results["color"]
                 features.remove("color")
             elif t == self.sm.SIZE_I:
-                kept = sz_kept_objects
+                kept = results["size"]
                 features.remove("size")
             elif t == self.sm.DIM_I:
-                kept = dim_kept_objects
+                kept = results["dim"]
                 features.remove("dim")
 
             context = self.reg.update_context(kept)
 
         # you'll always have a last one pre-noun
-        if "color" in features:
-            _, clr_score, clr_data, clr_kept_objects = self.reg.get_model_input("color", obj, context)
-            color_x.append([clr_score, clr_data])
-        if "size" in features:
-            _, sz_score, sz_data, sz_kept_objects = self.reg.get_model_input("size", obj, context)
-            size_x.append([sz_score, sz_data])
-        if "dim" in features:
-            _, dim_score, dim_data, dim_kept_objects = self.reg.get_model_input("dim", obj, context)
-            dim_x.append([dim_score, dim_data])
-
-        return color_x, size_x, dim_x
+        if not tokens:
+            x, _, _ = self.reg.get_model_input(obj, context)
+            xq.append(x)
+        return xq
 
     def assemble_x(self, tokenized_responses):
-        color_full_x = []
-        size_full_x = []
-        dim_full_x = []
-
+        """ UPDATED """
+        X = []
         index = 0
+        iter_count = 0
         for ws in self.workspaces:
             obj, context = self.workspaces[ws]
             for pid_response in tokenized_responses[index]:
-                color_x, size_x, dim_x = self.assemble_x_for_q(obj, context, pid_response)
-                color_full_x += color_x
-                size_full_x += size_x
-                dim_full_x += dim_x
+                xq = self.assemble_x_for_q(obj, context, pid_response)
+                X+=xq
+                iter_count += 1
             index+=1
-
-        return color_full_x, size_full_x, dim_full_x
+        print("x iterations", iter_count)
+        return X
 
     def test_labeling(self, key, c):
         # show usage
@@ -198,52 +175,41 @@ class CorpusTraining:
                         all_responses[count].append(response)
                         count += 1
 
+        print(all_responses)
         return all_responses
 
     def assemble_Y(self, tokenized_responses):
-        color_Ys = []
-        size_Ys = []
-        dim_Ys = []
-
+        """ UPDATED """
+        Y = []
+        iter_count=0
         for qid in tokenized_responses:
             for labels, tokens in qid:
-                clr, sz, dim = self.assemble_Y_for_q(tokens)
-                color_Ys += clr
-                size_Ys += sz
-                dim_Ys += dim
-
-        return color_Ys, size_Ys, dim_Ys
+                Yq = self.assemble_Y_for_q(tokens)
+                Y += Yq
+                iter_count+=1
+        print("Y_iterations",iter_count)
+        return Y
 
     def assemble_Y_for_q(self, tokenized_response):
-        if not tokenized_response:
-            return [False], [False], [False]
-
-        color_y = []
-        size_y = []
-        dim_y = []
+        """ UPDATED """
+        Yq = []
 
         base = [self.sm.COLOR_I, self.sm.SIZE_I, self.sm.DIM_I]
         features = copy.copy(base)
         for token in tokenized_response:
-            res = list(map(lambda x: token == x, base))
-            if self.sm.COLOR_I in features:
-                color_y.append(res[0])
-            if self.sm.SIZE_I in features:
-                size_y.append(res[1])
-            if self.sm.DIM_I in features:
-                dim_y.append(res[2])
+            if token == self.sm.COLOR_I:
+                Yq.append("color")
+            elif token == self.sm.SIZE_I:
+                Yq.append("size")
+            elif token == self.sm.DIM_I:
+                Yq.append("dim")
 
             features.remove(token)
 
         # last pre-noun space
-        if self.sm.COLOR_I in features:
-            color_y.append(False)
-        if self.sm.SIZE_I in features:
-            size_y.append(False)
-        if self.sm.DIM_I in features:
-            dim_y.append(False)
-
-        return color_y, size_y, dim_y
+        if not tokenized_response:
+            Yq.append("none")
+        return Yq
 
     def process_all_outputs(self, all_responses):
         # NEW VERSION: use all responses (requires data cleaning)
@@ -276,22 +242,7 @@ if __name__ == "__main__":
     # inputs = trainer.assemble_x(tokenized)
     # outputs = trainer.assemble_Y(tokenized)
 
-    clr_x, sz_x, dim_x = inputs
-    clr_y, sz_y, dim_y = outputs
-
-    clr_x2, sz_x2, dim_x2 = inputs2
-    clr_y2, sz_y2, dim_y2 = outputs2
-
-    clr_x += clr_x2
-    sz_x += sz_x2
-    dim_x += dim_x2
-
-    clr_y += clr_y2
-    sz_y += sz_y2
-    dim_y += dim_y2
-
-    i = (clr_x, sz_x, dim_x)
-    o = (clr_y, sz_y, dim_y)
+    i = inputs + inputs2
+    o = outputs + outputs2
 
     trainer.train(i, o)
-    trainer.save_models()

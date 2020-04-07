@@ -69,7 +69,7 @@ class SpeechModule:
         return l1, val1
 
     def _label_size(self, obj, context):
-        # # estimate volume based on dimensions
+        # # estimate volume based on dim
         z = obj.get_feature_val("z_size")
         if z > 0:
             label = "big"

@@ -1,5 +1,5 @@
 from training import CorpusTraining
-
+# from training_v2 import CorpusTraining
 
 def predict_batch(xml_workspace_filename):
     trainer = CorpusTraining()

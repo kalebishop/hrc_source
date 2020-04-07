@@ -113,7 +113,7 @@ class CorpusTraining:
             context = self.reg.update_context(kept)
 
         # you'll always have a last one pre-noun
-        if not tokens:
+        if not tokens or features:
             x, _, _ = self.reg.get_model_input(obj, context)
             xq.append(x)
         return xq
@@ -207,7 +207,7 @@ class CorpusTraining:
             features.remove(token)
 
         # last pre-noun space
-        if not tokenized_response:
+        if not tokenized_response or features:
             Yq.append("none")
         return Yq
 

@@ -68,9 +68,9 @@ class REG:
             cls = self.mapping[i]
             pdist_as_dict[cls] = pdist[i]
 
-        if len(type_env) > 1 and "none" :
+        if len(type_env) > 1 and "none" in features:
             features.remove("none")
-        best = max(feature_set, key=lambda x: pdist_as_dict[x])
+        best = max(features, key=lambda x: pdist_as_dict[x])
 
         if best == "none":
             return None, None, None
@@ -80,7 +80,7 @@ class REG:
     def generate_output(self, object, context):
         # context should include object
         """ UPDATED """
-
+        import pdb; pdb.set_trace()
         output = ""
         type = object.get_feature_val('type')
         type_env = context.get_type_match(type)

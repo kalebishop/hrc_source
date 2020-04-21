@@ -80,7 +80,6 @@ class REG:
     def generate_output(self, object, context):
         # context should include object
         """ UPDATED """
-        import pdb; pdb.set_trace()
         output = ""
         type = object.get_feature_val('type')
         type_env = context.get_type_match(type)

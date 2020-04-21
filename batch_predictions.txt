@@ -1,0 +1,14 @@
+From file  data/stim_v1_original.xml
+1 screwdriver
+2 bottle
+3 mug
+From file  data/stim_v2.xml
+1 purple small block
+2 purple small block
+3 purple big block
+4 purple block
+5 pink mug
+6 green small block
+7 green small block
+8 purple big block
+9 purple block

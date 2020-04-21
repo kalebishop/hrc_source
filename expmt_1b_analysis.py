@@ -1,6 +1,7 @@
 import csv
 import types
-from statistics import mode
+# from statistics import mode
+from collections import Counter
 
 PID_COUNT = -1
 
@@ -12,9 +13,19 @@ COLOR = ["red", "yellow", "blue", "green", "purple", "grey", "white", "violet"]
 SIZE = ["big", "biggest", "small", "smallest"]
 DIM = ["long", "longest", "loing", "short", "shortest", "length", "rectang", "retang", "square", "cub", "brick"]
 
+def mode(n):
+    out = []
+    counts = Counter(n)
+    maxcount = max(counts.values())
+    for val in counts:
+        if counts[val] == maxcount:
+            out.append(val)
+    return out
+
+
 def get_modal_response_per_stim():
     # read from csv titled latest.csv
-    with open("data/study_v1_responses.csv", newline='') as csvfile:
+    with open("data/study_v2_responses.csv", newline='') as csvfile:
         csvreader = csv.reader(csvfile, delimiter=",")
         header = next(csvreader)
         stim_dict = {}
